@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background: #fff9f1;
+}
+section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0 auto;
+  
+
+}
+
+section .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 100%; */
+    height: 660px;
+   margin: 0px auto;
+   background-color: #ffffff;
+   box-shadow: 2px 2px 3px black,2px 2px 13px black;
+}
+section .content .form{
+    width: 65%;
+    /* margin-left: 5rem; */
+    /* background-color: red; */
+    
+}
+h3{
+    color:#607d8b;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: textAnimation 2s 1;
+}
+@keyframes textAnimation {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+section .content .form .inputBx{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .content .form .inputBx input{
+    width: 100%;
+    height: 33px;
+    padding: 8px 20px;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid #607d8b;
+    border-left:3px solid blue;
+    background-color: transparent;
+}
+section .content .form  .inputBx select{
+    font-weight:500 ;
+    color:blue ;
+    margin-left: 10px;
+
+}
+section .content .form  .inputBx .select-label{
+    color: #607d8b;
+    font-weight: 500;
+}
+section .content .form .inputBx .form-label{
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    font-size: 15px;
+    pointer-events: none;
+    margin-bottom: 2px;
+    display: inline-block;
+    color:#607d8b;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+ .form .inputBx input:valid ~ .form-label,
+.form .inputBx input:focus ~ .form-label{
+   color: blue;
+   transform: translateX(10px) translateY(-17px);
+   font-size: 0.81rem;
+   background-color: #fff;
+}
+
+section .content .form .inputBx input[type="submit"]{
+    height: 45px;
+    color: #fff;
+    background-color: blue;
+    font-size: 20px;
+
+}
+section .content .form .inputBx input[type="submit"]:hover{
+    
+    background-color: rgb(77, 77, 240);
+    font-size: 21px;
+   
+}
+section .content .form .inputBx input[type="date"]{
+  
+    color: #fff;
+}
+section .content .form .inputBx input[type="date"]:valid
+{
+    color: black;
+}
+section .content .form .inputBx p{
+    position: absolute;
+    left: 25%;
+    color: #607d8b;
+}
+section .content .form .inputBx p a{
+    position: relative;
+    font-weight: 600;
+    color: blue;
+}
+
+@media (max-width:768px){
+    section .imgBx{
+    display: none;
+    width: 100%;
+    }
+    section .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index:1 ;
+    }
+    section .content .form {
+        width: 100%;
+        padding: 40px;
+        margin: 50px;
+    }
+    section .content .form h3{
+        color: black; 
+        font-weight: 600;
+        margin-top: 20px;
+    }
+}
+
+

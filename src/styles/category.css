@@ -1,0 +1,99 @@
+.img-hover:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .img-hover:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease-in-out; 
+  }
+  .card-body {
+    background-color: rgba(0, 0, 0, 0.112); 
+    color: #fff; 
+    padding: 1rem; 
+    border-radius: 0 0 10px 10px; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .card:hover .card-body {
+    background-color: rgba(0, 0, 0, 0.2); 
+  }
+    
+  .card-body h5 {
+    margin-bottom: 0.5rem; 
+    font-size: 1.2rem; 
+  }
+  .card-body span {
+    font-weight: bold; 
+    color: #ffc10766; 
+  }
+  
+  .card-body p {
+    margin-bottom: 0; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+}
+  
+  .card-body .price {
+    font-weight: bold; 
+    color: #000000; 
+    position: absolute; 
+    bottom: 1.3rem; 
+    right: 1rem;
+    display: none; 
+    font-size: 23px;
+  }
+  
+  .card:hover .price {
+    display: block; 
+
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.537);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    /* transform: translateY(100%); */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-description {
+    /* transform: translateY(0); */
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+  .btn-danger {
+    background-color: red;
+    color: white;
+  }
+
+/* .card img{
+    width: 500px;
+    height: 300px;
+} */
+
+.all{
+    background-color: hsla(120, 8%, 14%, 0.051);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 1rem;
+}

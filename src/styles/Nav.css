@@ -1,0 +1,21 @@
+
+.header-top-area{
+    position: absolute;
+    background-color: white;
+    right: -7px;
+    /* bottom: 0px; */
+    transform: translateY(90px);
+   
+   
+}
+
+.inline-link {
+    display: inline !important;
+  }
+  
+
+
+
+  
+
+
