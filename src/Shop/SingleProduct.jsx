@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import PopularPost from "./PopularPost";
 import Tags from "./Tags";
 import Rating from "../components/Sidebar/Rating";
+import Comparater from "./Comparater";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -81,6 +82,11 @@ const SingleProduct = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div className="comparater">
+                  <Comparater/>
+
                 </div>
                 
                 <div className="review">
